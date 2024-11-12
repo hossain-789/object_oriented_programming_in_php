@@ -1,39 +1,24 @@
-
 <?php
-/*
-class User
+class user
 {
-    public $name = 'Hossain';
+    public $userName = "Hossain";
 
     public function fullName()
     {
-        return 'Hossain Ahmed';
+        return "Hossain Ahmed";
     }
 
-    public function result($cGpa = 4.30)
+    public function getYear($years = 70)
     {
-        return $cGpa;
-    }
-
-}
-$user = new User;
-echo $user -> result(5);*/
-
-
-class User
-{
-    public $name = 'Hossain Ahmed';
-
-    public function catName()
-    {
-        return 'Tom and Jerry';
-    }
-
-    public function catNumber($number = 587404)
-    {
-        return $number;
+        return $years;
     }
 }
 
-$user = new User;
-echo $user-> catNumber();
+$user = new user;
+echo $user->userName;
+echo "<br />";
+echo $user->fullName();
+echo "<br />";
+echo $user->getYear(90);
+
+?>
